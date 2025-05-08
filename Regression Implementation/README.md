@@ -10,8 +10,8 @@
 
 This project involves implementing various regression models on two datasets:
 
-- **California Housing Dataset** to predict median house values.
-- **Fish Dataset** to predict fish weight based on physical measurements.
+- **[California Housing Dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_california_housing.html)** to predict median house values.
+- **[Fish Dataset](https://www.kaggle.com/datasets/aungpyaeap/fish-market)** to predict fish weight based on physical measurements.
 
 The models implemented include **Linear Regression**, **Ridge Regression**, **Lasso Regression**, and **Ordinary Least Squares (OLS)**. Performance was evaluated using **R² Score** and **Mean Squared Error (MSE)**.
 
