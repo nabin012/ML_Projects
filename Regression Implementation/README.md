@@ -1,9 +1,19 @@
-
-# 🏡🐟 Machine Learning Regression Analysis on California Housing and Fish Datasets
+# 🏡🐟 Regression Analysis Using California Housing and Fish Datasets
 
 ![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Regression-orange?logo=scikit-learn)
 ![License](https://img.shields.io/badge/License-MIT-green)
+
+---
+
+## 📘 Project Overview
+
+This project involves implementing various regression models on two datasets:
+
+- **California Housing Dataset** to predict median house values.
+- **Fish Dataset** to predict fish weight based on physical measurements.
+
+The models implemented include **Linear Regression**, **Ridge Regression**, **Lasso Regression**, and **Ordinary Least Squares (OLS)**. Performance was evaluated using **R² Score** and **Mean Squared Error (MSE)**.
 
 ---
 
@@ -17,70 +27,40 @@
 
 ---
 
-## 📊 California Housing Dataset
+## 🏡 California Housing Dataset
 
-### 🔍 Task 1: Data Exploration & Preprocessing
+### 🔍 What I Did
 
-- Visualized target and features using:
-  - Histograms
-  - Box Plots
-  - Scatter Plots
-- Detected outliers and examined correlations.
-- **Feature Scaling**: StandardScaler used for normalization before training models.
+- Performed exploratory data analysis (EDA) with histograms, box plots, and scatter plots to understand feature distributions and relationships.
+- Identified outliers and investigated correlations between variables.
+- Scaled features using `StandardScaler` to prepare data for regression models.
 
-### 🤖 Task 2: Regression Models Implemented
+### 🤖 Models Applied
 
-- Simple Linear Regression  
-- Multiple Linear Regression  
-- Ridge Regression  
-- Lasso Regression  
-- OLS (via `statsmodels`)
+- Implemented:
+  - Simple Linear Regression (single feature)
+  - Multiple Linear Regression (all features)
+  - Ridge Regression
+  - Lasso Regression
+  - OLS Regression using `statsmodels`
 
-### 📈 Evaluation Metrics
+- Evaluated each model using:
+  - **R² Score**
+  - **Mean Squared Error (MSE)**
 
-- R² Score  
-- Mean Squared Error (MSE)
-
-> ✅ Regularized models (Ridge & Lasso) helped in controlling overfitting and improved generalization.
+- Compared models to understand the impact of regularization. Ridge and Lasso improved generalization and reduced overfitting compared to basic linear models.
 
 ---
 
 ## 🐟 Fish Dataset
 
-### 🔍 Task 1: Linear Regression
+### 🔍 What I Did
 
-**Objective:** Predict fish weight using length, height, and width.
+- Built a linear regression model to predict fish weight using features: **length, height, and width**.
+- Calculated coefficients using standard **Least Squares Estimation**.
+- Reported **R² score** and **standard error** of the coefficients.
 
-Computed:
-- Regression coefficients using Least Squares Estimation  
-- R² and standard error of estimates
+- Applied **Ridge** and **Lasso** regression to improve robustness and handle multicollinearity.
+- Compared results with standard linear regression to assess model stability and feature impact.
 
-### 🧠 Task 2: Ridge & Lasso Regression
 
-- Applied regularization to handle feature correlation  
-- Compared coefficients and error terms with standard Linear Regression
-
----
-
-## 📈 Summary of Results
-
-| Model  | Dataset     | R² Score | MSE     | Notes                           |
-|--------|-------------|----------|---------|----------------------------------|
-| Linear | California  | 0.xx     | xxx.xx  | Baseline model                  |
-| Ridge  | California  | 0.xx     | xxx.xx  | Reduced overfitting             |
-| Lasso  | California  | 0.xx     | xxx.xx  | Feature selection behavior      |
-| OLS    | California  | 0.xx     | xxx.xx  | Statistical analysis included   |
-| Linear | Fish        | 0.xx     | xxx.xx  | Uses 3 features                 |
-| Ridge  | Fish        | 0.xx     | xxx.xx  | Regularized regression          |
-| Lasso  | Fish        | 0.xx     | xxx.xx  | Drives some coefficients to zero |
-
-> 📝 Replace placeholder values (0.xx, xxx.xx) with your actual results.
-
----
-
-## 💻 How to Run the Project
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/your-username/regression-analysis.git
-cd regression-analysis
